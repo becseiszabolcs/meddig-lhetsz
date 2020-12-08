@@ -15,37 +15,122 @@
 
     </style>
     <table>
-      <th>
+      <tr>
+        <td>kérdések</td>
         <td>igen</td>
         <td>nem</td>
-      </th>
+      </tr>
       
       <tr>
         
-        <td>Férfi vagy?</td>
+        <td>1.Férfi vagy?</td>
         <td><input type="radio" name="k1" id="k1I"></td>
         <td><input type="radio" name="k1"></td>
         
       </tr>
       <tr>
         
-        <td>nő vagy?</td>
+        <td>2.nő vagy?</td>
         <td><input type="radio" name="k2" id="k2I"></td>
         <td><input type="radio" name="k2"></td>
         
       </tr>
       <tr>
         
-        <td>Férfi vagy?</td>
+        <td>3.30 és 40 közötti vagy?</td>
         <td><input type="radio" name="k3" id="k3I"></td>
         <td><input type="radio" name="k3"></td>
         
       </tr>
       <tr>
         
-        <td>nő vagy?</td>
+        <td>4.40 és 50 közötti vagy?</td>
         <td><input type="radio" name="k4" id="k4I"></td>
         <td><input type="radio" name="k4"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>5.50 és 70 közötti vagy?</td>
+        <td><input type="radio" name="k5" id="k5I"></td>
+        <td><input type="radio" name="k5"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>6.70 évesnél idősebb vagy?</td>
+        <td><input type="radio" name="k6" id="k6I"></td>
+        <td><input type="radio" name="k6"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>7.65 évesnél idősebb vagy és még dolgozol?</td>
+        <td><input type="radio" name="k7" id="k7I"></td>
+        <td><input type="radio" name="k7"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>8.Kétmilliós vagy még népesebb nagyvárosban élsz?</td>
+        <td><input type="radio" name="k8" id="k8I"></td>
+        <td><input type="radio" name="k8"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>9.Tízezer vagy még kevesebb lakosú kisvárosban vagy falusi környezetben élsz?</td>
+        <td><input type="radio" name="k9" id="k9I"></td>
+        <td><input type="radio" name="k9"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>10.Egyedül élsz?</td>
+        <td><input type="radio" name="k10" id="k10I"></td>
+        <td><input type="radio" name="k10"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>11.Élettárssal vagy közeli baráttal élsz?</td>
+        <td><input type="radio" name="k11" id="k11I"></td>
+        <td><input type="radio" name="k11"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>12.Egyetemi vagy főiskolai diplomád van?</td>
+        <td><input type="radio" name="k12" id="k12I"></td>
+        <td><input type="radio" name="k12"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>13.Van posztgraduális fokozatod vagy doktorid, illetve hasonló hivatásos vagy tudományos minősítésed?</td>
+        <td><input type="radio" name="k13" id="k13I"></td>
+        <td><input type="radio" name="k13"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>14.Nagyobb jövedelmed van, mint a népesség 95%-ának?</td>
+        <td><input type="radio" name="k14" id="k14I"></td>
+        <td><input type="radio" name="k14"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>15.Főként ülőmunkát végzel?</td>
+        <td><input type="radio" name="k15" id="k15I"></td>
+        <td><input type="radio" name="k15"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>16.A munkád fárasztó testi munkát is magába foglal?</td>
+        <td><input type="radio" name="k16" id="k16I"></td>
+        <td><input type="radio" name="k16"></td>
         
       </tr>
       <tr>
@@ -61,9 +146,43 @@
       var ev = 72;
       function Myfunction(){
         ev = 72;
-        if( document.getElementById("k1I").checked )   ev = ev - 3;
-        if( document.getElementById("k2I").checked )   ev = ev + 4;        
-        document.write(ev).innerHTML = cic;
+        if( document.getElementById("k1I").checked )    ev = ev - 3;
+        if( document.getElementById("k2I").checked )    ev = ev + 4;
+        if( document.getElementById("k3I").checked )    ev = ev + 2;
+        if( document.getElementById("k4I").checked )    ev = ev + 3;
+        if( document.getElementById("k5I").checked )    ev = ev + 4;
+        if( document.getElementById("k6I").checked )    ev = ev + 5;
+        if( document.getElementById("k7I").checked )    ev = ev + 3;
+        if( document.getElementById("k8I").checked )    ev = ev - 2;
+        if( document.getElementById("k9I").checked )    ev = ev + 2;
+        if( document.getElementById("k10I").checked )   ev = ev - 3;
+        if( document.getElementById("k11I").checked )   ev = ev + 5;
+        if( document.getElementById("k12I").checked )   ev = ev + 1;
+        if( document.getElementById("k13I").checked )   ev = ev + 2;
+        if( document.getElementById("k14I").checked )   ev = ev - 2;
+        if( document.getElementById("k15I").checked )   ev = ev - 3;
+        if( document.getElementById("k16I").checked )   ev = ev + 3; 
+        if( document.getElementById("k17I").checked )   ev = ev + 2;
+        if( document.getElementById("k18I").checked )   ev = ev - 4;
+        if( document.getElementById("k19I").checked )   ev = ev + 1;
+        if( document.getElementById("k20I").checked )   ev = ev - 2;
+        if( document.getElementById("k21I").checked )   ev = ev - 3;
+        if( document.getElementById("k22I").checked )   ev = ev + 3;
+        if( document.getElementById("k23I").checked )   ev = ev - 1 ;
+        if( document.getElementById("k24I").checked )   ev = ev - 8;
+        if( document.getElementById("k25I").checked )   ev = ev - 6;
+        if( document.getElementById("k26I").checked )   ev = ev - 3;
+        if( document.getElementById("k27I").checked )   ev = ev - 1;
+        if( document.getElementById("k28I").checked )   ev = ev - 8;
+        if( document.getElementById("k29I").checked )   ev = ev - 4;
+        if( document.getElementById("k30I").checked )   ev = ev - 2; 
+        if( document.getElementById("k31I").checked )   ev = ev + 2;
+        if( document.getElementById("k32I").checked )   ev = ev + 2;
+        if( document.getElementById("k33I").checked )   ev = ev + 6;
+        if( document.getElementById("k34I").checked )   ev = ev - 4;
+        if( document.getElementById("k35I").checked )   ev = ev - 3;
+                    
+        document.getElementById("cic").innerHTML = ev;
       }
 
 
