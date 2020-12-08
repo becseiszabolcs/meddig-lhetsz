@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <style>
+        td{
+          border:2px solid black
+          
+        }
+
+    </style>
+    <table>
+      <th>
+        <td>igen</td>
+        <td>nem</td>
+      </th>
+      
+      <tr>
+        
+        <td>Férfi vagy?</td>
+        <td><input type="radio" name="k1" id="k1I"></td>
+        <td><input type="radio" name="k1"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>nő vagy?</td>
+        <td><input type="radio" name="k2" id="k2I"></td>
+        <td><input type="radio" name="k2"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>Férfi vagy?</td>
+        <td><input type="radio" name="k3" id="k3I"></td>
+        <td><input type="radio" name="k3"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>nő vagy?</td>
+        <td><input type="radio" name="k4" id="k4I"></td>
+        <td><input type="radio" name="k4"></td>
+        
+      </tr>
+      <tr>
+        
+        <td>várható életkorod tartama</td>
+        <td id="cic"></td>
+        
+      </tr>
+    </table>
+    <button onclick="Myfunction()">kiszámítás</button> 
+    
+    <script>
+      var ev = 72;
+      function Myfunction(){
+        ev = 72;
+        if( document.getElementById("k1I").checked )   ev = ev - 3;
+        if( document.getElementById("k2I").checked )   ev = ev + 4;        
+        document.write(ev).innerHTML = cic;
+      }
+
+
+    </script>
+  </body>
+</html>
